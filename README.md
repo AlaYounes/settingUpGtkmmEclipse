@@ -19,3 +19,20 @@ set MSYS2_PATH_TYPE=inherit
 
 ==>Installer des packages(gcc,g++,...), et jouer avec les commandes sous MSYS2-64 ou windows power shell pour verifier que tout fonctionne. 
 
+## Gtkmm(3.0) sous windows 
+https://wiki.gnome.org/Projects/gtkmm/MSWindows \
+Aprés l'installation des packages nécessaires(Version 64 dans notre cas) \
+!! L'installation du pkg-config (pkg-config 0.29.2-4) est nécessaire pour la suite. \
+Notice: 
+Si la commande $pkg-config --cflags --libs gtkmm-3.0 n'affiche pas le nécessaire en utilisant le PS du windows ça posera pas un probleme. 
+
+Ouvrir MSYS2-64 bash et tester avec la commande: \
+g++ foo.cpp -o target.exe `pkg-config gtkmm-3.0 --cflags –libs` 
+Notice: Le fonctionnement avec PS windows n'est pas obligatoire. 
+### Problème :
+$pkg-config fonctionne bien sur le MSYS2 64 mais pas sur un terminal Windows. \
+$pkg-config --list-all ==> Detecte que les packages (.pc) qui se trouvent dans le fichier /usr/lib/pkgconfig/"packageName".pc
+### Solution:
+Accédez à C:\msys64\mingw64\lib\pkgconfig\”packageName”.pc \
+Copiez les fichiers dans le dossier Windows. \
+Essayez d'exécuter un simple programme gtkmm avec le terminal Windows.
