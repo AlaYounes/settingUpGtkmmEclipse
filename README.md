@@ -2,6 +2,7 @@
 Configuration de l'environnement(MSYS2,Gtkmm,ECLIPSE,GLADE)
 ## Configuration du MSYS2
 https://www.msys2.org/ \
+https://www.devdungeon.com/content/install-gcc-compiler-windows-msys2-cc \
 Les problèmes possibles : \
 1/ éxecuter $ pacman -Sy avant $ pacman -Su 
 
@@ -17,6 +18,4 @@ set MSYS=winsymlinks:nativestrict \
 set MSYS2_PATH_TYPE=inherit 
 
 ==>Installer des packages(gcc,g++,...), et jouer avec les commandes sous MSYS2-64 ou windows power shell pour verifier que tout fonctionne. 
-
-## Gtkmm(3.0) sous windows 
 
