@@ -46,3 +46,17 @@ Filtrer tout les dépendances qui concernent gtkmm-3.0.\
 $pkg-config –libs --flags gtkmm-3.0 > /home/alayo/tests/output
 Toutes les dépendances sont maintenant enregistrées dans un fichier.\
 Il faut justement effacer les parametres du liaison et copier les dépendance dans eclipse.
+
+# Glade
+https://packages.msys2.org/package/mingw-w64-x86_64-glade
+Juste pour tester : \
+https://stackoverflow.com/questions/49629744/gtk-glade-aide-destroy-signal-problems
+Si vous utilisez l'environnement MS Windows, nous devons ajouter G_MODULE_EXPORT lors de l'appel d'un action handler (programmation C et non gtkmm (C ++))
+
+!!! Problème persistant avec la libxml++ -« version » 
+1. Libxml++ dépend de libxml2 et de lui-même 
+2. Libxml2 est dans sa version stable : 2.9.10 (30 octobre 2019; il y a 18 mois) 
+3. Essayer avec différentes versions de libxml ++ (entre le 22-05-2020 et le 28-08-2020) 
+
+### Commandes Utiles
+$ pacman -Q | grep gtkmm ==> Trouver le package et sa version. 
