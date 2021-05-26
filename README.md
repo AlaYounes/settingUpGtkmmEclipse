@@ -60,3 +60,6 @@ Si vous utilisez l'environnement MS Windows, nous devons ajouter G_MODULE_EXPORT
 
 ### Commandes Utiles
 $ pacman -Q | grep gtkmm ==> Trouver le package et sa version. 
+
+## Trello et documentation
+https://trello.com/b/jMCgu521/demarches
