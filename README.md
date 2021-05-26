@@ -36,3 +36,13 @@ $pkg-config --list-all ==> Detecte que les packages (.pc) qui se trouvent dans l
 Accédez à C:\msys64\mingw64\lib\pkgconfig\”packageName”.pc \
 Copiez les fichiers dans le dossier Windows. \
 Essayez d'exécuter un simple programme gtkmm avec le terminal Windows.
+
+## Eclipse
+Integrer MSYS2 dans eclipse. \
+https://www.devdungeon.com/content/how-setup-gcc-msys2-eclipse-windows-c-development
+
+--/ Pour les librairies et dependances.
+Filtrer tout les dépendances qui concernent gtkmm-3.0.\
+$pkg-config –libs --flags gtkmm-3.0 > /home/alayo/tests/output
+Toutes les dépendances sont maintenant enregistrées dans un fichier.\
+Il faut justement effacer les parametres du liaison et copier les dépendance dans eclipse.
