@@ -42,7 +42,7 @@ Integrer MSYS2 dans eclipse. \
 https://www.devdungeon.com/content/how-setup-gcc-msys2-eclipse-windows-c-development
 
 --/ Pour les librairies et dependances.
-Filtrer tout les dépendances qui concernent gtkmm-3.0.\
+Filtrer tous les dépendances qui concernent gtkmm-3.0.\
 $pkg-config –libs --flags gtkmm-3.0 > /home/alayo/tests/output
 Toutes les dépendances sont maintenant enregistrées dans un fichier.\
 Il faut justement effacer les parametres du liaison et copier les dépendance dans eclipse.
