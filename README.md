@@ -47,6 +47,12 @@ $pkg-config –libs --flags gtkmm-3.0 > /home/alayo/tests/output
 Toutes les dépendances sont maintenant enregistrées dans un fichier.\
 Il faut justement effacer les parametres du liaison et copier les dépendance dans eclipse.
 
+NB ! Logiciel non fonctionnel même sans erreur avec les dépendances.
+il faut bien installer les fichiers .dll nécessaire pour le logiciel
+Normalement tout ce qui concerne les fichier qui leur nom commencent par lib....dll
+=> libgtkmm, libxml
+https://sites.google.com/site/edulinuxdeveloper/gnome-doc/gtkmm/gtkmm-no-microsoft-windows
+
 # Glade
 https://packages.msys2.org/package/mingw-w64-x86_64-glade
 Juste pour tester : \
