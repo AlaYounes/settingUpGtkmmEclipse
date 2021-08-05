@@ -51,6 +51,8 @@ NB ! Logiciel non fonctionnel même sans erreur avec les dépendances.
 il faut bien installer les fichiers .dll nécessaire pour le logiciel
 Normalement tout ce qui concerne les fichier qui leur nom commencent par lib....dll
 => libgtkmm, libxml
+https://packages.msys2.org/package/mingw-w64-x86_64-libxml++?repo=mingw64
+https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-libxml++?repo=ucrt64
 https://sites.google.com/site/edulinuxdeveloper/gnome-doc/gtkmm/gtkmm-no-microsoft-windows
 
 # Glade
